@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     border: none;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
@@ -13,6 +14,9 @@ body{
     height: 100vh;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
+    flex-direction: column;
+    gap: 10px
+    ;
 }
 
 a{
@@ -30,4 +34,32 @@ a > h1{
 a > h1:hover{
     background: #fff;
     color: #000;
+}
+
+.work{
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.card > h2{
+    font-size: 40px;
+}
+
+.card{
+    text-decoration: non;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px #fff solid;
+    transition: all 1s ease-in-out;
+}
+
+.card:hover{
+    background: #fff;
+    color: #000;
+    
 }
